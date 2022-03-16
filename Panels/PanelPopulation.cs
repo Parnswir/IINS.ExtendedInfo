@@ -401,7 +401,7 @@ namespace IINS.ExtendedInfo
                 if (mainAspectRatio > 0f && mainAspectRatio < 1.9f)
                     relativePosition = new Vector3(1245f, 4.0f);
                 else
-                    relativePosition = new Vector3(relativePosition.x, 4.0f);
+                    relativePosition = new Vector3(relativePosition.x - 440, 4.0f);
             }
         }
 

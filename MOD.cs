@@ -10,7 +10,7 @@ namespace IINS.ExtendedInfo
 
     public class ExtendedInfoMod : MODLoadingExtension, IUserMod
     {
-        public static string Version = "(1.0.2)";
+        public static string Version = "(1.1.0)";
 
         public ExtendedInfoMod()
         {
@@ -21,14 +21,14 @@ namespace IINS.ExtendedInfo
         {
             get
             {
-                return "Extended InfoPanel" + " " + Version;
+                return "Max' Extended InfoPanel" + " " + Version;
             }
         }
         public string Description
         {
             get
             {
-                return "\nShow more information data in game bottom panel.";
+                return "\nShow more information data in game bottom panel with a 21:9 aspect ratio.";
             }
         }
 
@@ -51,6 +51,5 @@ namespace IINS.ExtendedInfo
         {
             base.OnLevelUnloading();                   
         }
-
     }
 }

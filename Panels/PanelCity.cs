@@ -44,6 +44,7 @@ namespace IINS.ExtendedInfo
         {
             if (relevantComponent != null)
             {
+                CityInfoButton.absolutePosition = new Vector3(CityInfoButton.absolutePosition.x - 61, CityInfoButton.absolutePosition.y);
                 absolutePosition = CityInfoButton.absolutePosition;
 
                 if (mainAspectRatio > 0f && mainAspectRatio < 1.9f)
@@ -209,7 +210,7 @@ namespace IINS.ExtendedInfo
             else if (component == lblCityName)
                 ExtendedInfoManager.SetCurrentMode(InfoManager.InfoMode.NoisePollution, InfoManager.SubInfoMode.Default);
             else if (component == lblTouristsAverage)
-                ExtendedInfoManager.SetCurrentMode(InfoManager.InfoMode.Connections, InfoManager.SubInfoMode.Tourism);
+                ExtendedInfoManager.SetCurrentMode(InfoManager.InfoMode.Connections, InfoManager.SubInfoMode.Tourists);
         }
 
         private void OnRightSetInfoModeClick(UIComponent component, UIMouseEventParameter P)

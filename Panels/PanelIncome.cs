@@ -232,7 +232,7 @@ namespace IINS.ExtendedInfo
                 if (mainAspectRatio > 0f && mainAspectRatio < 1.9f)
                     relativePosition = new Vector3(980f, 4.0f);
                 else
-                    relativePosition = new Vector3(relativePosition.x + 20, 4.0f);
+                    relativePosition = new Vector3(relativePosition.x - 320, 4.0f);
             }
         }
 
